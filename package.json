@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A maintained and even tinier version of minimist",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "tap test/*.js",
     "coverage": "covert test/*.js"
