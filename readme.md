@@ -41,7 +41,7 @@ $ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
 # API
 
 ``` js
-var parseArgs = require('minimist')
+const parseArgs = require('minimist')
 ```
 
 ## var argv = parseArgs(args, opts={})
@@ -83,3 +83,8 @@ and `argv['--']` with everything after the `--`. Here's an example:
 * `opts.unknown` - a function which is invoked with a command line parameter not
 defined in the `opts` configuration object. If the function returns `false`, the
 unknown option is not added to `argv`.
+
+## Authors
+
+- James Halliday ([@substack](https://twitter.com/substack))
+- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)
