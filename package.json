@@ -1,6 +1,6 @@
 {
   "name": "nanomist",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A maintained and even tinier version of minimist",
   "main": "index.js",
   "files": [
@@ -28,7 +28,10 @@
     "argv",
     "getopt",
     "parser",
-    "optimist"
+    "optimist",
+    "args",
+    "arguments",
+    "parsing"
   ],
   "license": "MIT",
   "devDependencies": {
