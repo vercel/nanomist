@@ -1,7 +1,6 @@
 # nanomist
 
-This package let's you parse command line arguments inside CLIs. It is the guts of optimist's argument parser without all the
-fanciful decoration and a fork of [minimist](https://github.com/substack/minimist) (which is unmaintained and bigger on disk).
+This package let's you parse command line arguments inside CLIs. It's a fork of [minimist](https://github.com/substack/minimist) (which is unmaintained and bigger on disk).
 
 # Usage
 
@@ -84,4 +83,3 @@ and `argv['--']` with everything after the `--`. Here's an example:
 * `opts.unknown` - a function which is invoked with a command line parameter not
 defined in the `opts` configuration object. If the function returns `false`, the
 unknown option is not added to `argv`.
-
