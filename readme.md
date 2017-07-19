@@ -13,7 +13,7 @@ npm install --save nanomist
 Then you can start using it:
 
 ``` js
-const flags = require('minimist')(process.argv.slice(2))
+const flags = require('nanomist')(process.argv.slice(2))
 console.dir(flags)
 ```
 
@@ -41,7 +41,7 @@ $ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
 ## API
 
 ``` js
-const parseArgs = require('minimist')
+const parseArgs = require('nanomist')
 ```
 
 ## var argv = parseArgs(args, opts={})
