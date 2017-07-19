@@ -1,25 +1,31 @@
-# minimist
+# nanomist
 
-parse argument options
+This package let's you parse command line arguments inside CLIs. It is the guts of optimist's argument parser without all the
+fanciful decoration and a fork of [minimist](https://github.com/substack/minimist) (which is unmaintained and bigger on disk).
 
-This module is the guts of optimist's argument parser without all the
-fanciful decoration.
+# Usage
 
-[![browser support](https://ci.testling.com/substack/minimist.png)](http://ci.testling.com/substack/minimist)
+First, install it:
 
-[![build status](https://secure.travis-ci.org/substack/minimist.png)](http://travis-ci.org/substack/minimist)
+```bash
+npm install --save nanomist
+```
 
-# example
+Then you can start using it:
 
 ``` js
-var argv = require('minimist')(process.argv.slice(2));
-console.dir(argv);
+const flags = require('minimist')(process.argv.slice(2))
+console.dir(flags)
 ```
+
+Here's what the result will look like:
 
 ```
 $ node example/parse.js -a beep -b boop
 { _: [], a: 'beep', b: 'boop' }
 ```
+
+And another one with more flags:
 
 ```
 $ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
@@ -33,7 +39,7 @@ $ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
   beep: 'boop' }
 ```
 
-# methods
+# API
 
 ``` js
 var parseArgs = require('minimist')
@@ -79,14 +85,3 @@ and `argv['--']` with everything after the `--`. Here's an example:
 defined in the `opts` configuration object. If the function returns `false`, the
 unknown option is not added to `argv`.
 
-# install
-
-With [npm](https://npmjs.org) do:
-
-```
-npm install minimist
-```
-
-# license
-
-MIT
