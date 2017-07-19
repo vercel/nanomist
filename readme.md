@@ -2,7 +2,7 @@
 
 This package let's you parse command line arguments inside CLIs. It's a fork of [minimist](https://github.com/substack/minimist) (which is unmaintained and bigger on disk - in turn, we decided to create our own fork).
 
-# Usage
+## Usage
 
 First, install it:
 
@@ -38,7 +38,7 @@ $ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz
   beep: 'boop' }
 ```
 
-# API
+## API
 
 ``` js
 const parseArgs = require('minimist')
