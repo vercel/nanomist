@@ -1,6 +1,6 @@
 # nanomist
 
-This package lets you parse command line arguments inside CLIs. It's a fork of [minimist](https://github.com/substack/minimist) (which is unmaintained and bigger on disk - in turn, we decided to create our own fork).
+This package lets you parse command line arguments inside CLIs. It's a fork of [minimist](https://github.com/substack/minimist) (which is unmaintained and bigger on disk - in turn, [@leo](https://github.com/leo) decided to create his own fork).
 
 ## Usage
 
